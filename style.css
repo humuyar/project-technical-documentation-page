@@ -22,3 +22,8 @@ nav#navbar a {
 main#main-doc {
   grid-area: mainContent;
 }
+
+header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
