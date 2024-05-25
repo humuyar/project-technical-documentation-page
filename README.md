@@ -41,16 +41,21 @@ div.main-body {
 
 ## Usage 🎯
 
-```cd project-technical-documentation-page
+```clone
+  cd project-technical-documentation-page
 ```
-```code .
+```clone
+  code .
 ```
-```git add .
+```clone
+  git add .
 ```
-```git commit -m "anything you want"
+```clone
+  git commit -m "anything you want"
 ```
-```git push
-``
+```clone
+  git push
+```
 
 ## Features ⭐
 - This website is a resposive website. 
@@ -62,5 +67,5 @@ Humaira ✨Qabooli✨
 - Email: humiq6071@gmail.com✔
 
 ## Contributing 🤝
-🎇 by using this link you can share your opinion : https://github.com/humuyar/project-technical-documentation-page
+🎇 by using this link you can share your opinion : https://github.com/humuyar/project-technical-documentation-page/issues
 
