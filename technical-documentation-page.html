@@ -384,6 +384,35 @@
                     as only important details are
                     provided to the user.
                 </p>
+                <code>
+                    // working of Abstraction<br>
+                    #include <iostream><br>
+                    using namespace std;<br>
+                    class implementAbstraction {<br>
+                    private:<br>
+                        int a, b;<br>
+                    public:<br>
+                        // method to set values of<br>
+                        // private members<br>
+                        void set(int x, int y)<br>
+                        {<br>
+                            a = x;<br>
+                            b = y;<br>
+                        }<br>
+                        void display()<br>
+                        {<br>
+                            cout << "a = " << a << endl;<br>
+                            cout << "b = " << b << endl;<br>
+                        }<br>
+                    };<br>
+                    int main()<br>
+                    {<br>
+                        implementAbstraction obj;<br>
+                        obj.set(10, 20);<br>
+                        obj.display();<br>
+                        return 0;<br>
+                    }
+                </code>
             </section>
             <section class="main-section" id="Encapsulation">
                 <header>
