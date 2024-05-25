@@ -277,6 +277,56 @@
                     of polymorphism is achieved by
                     Function Overriding.
                 </p>
+                <code>
+                    #include <iostream> <br>
+                        using namespace std;<br>
+                        class Shape {<br>
+                           protected:<br>
+                            int width, height;<br>
+                              
+                           public:<br>
+                              Shape( int a = 0, int b = 0){<br>
+                                 width = a;<br>
+                                 height = b;<br>
+                              }<br>
+                              int area() {<br>
+                                 cout << "Parent class area :" << width * height << endl;<br>
+                                 return width * height;<br>
+                              }<br>
+                        };<br>
+                        class Rectangle: public Shape {<br>
+                           public:<br>
+                              Rectangle( int a = 0, int b = 0):Shape(a, b) { }<br>
+                              int area () { <br>
+                                 cout << "Rectangle class area :" << width * height << endl;<br>
+                                 return (width * height); <br>
+                              }<br>
+                        };<br>
+                        
+                        class Triangle: public Shape {<br>
+                           public:<br>
+                              Triangle( int a = 0, int b = 0):Shape(a, b) { }<br>
+                              int area () {<br>
+                                 cout << "Triangle class area :" << (width * height)/2 << endl;<br>
+                                 return (width * height / 2);<br> 
+                              }<br>
+                        };<br>
+                        // Main function for the program<br>
+                        int main() {<br>
+                           Shape *shape;<br>
+                           Rectangle rec(10,7);<br>
+                           Triangle  tri(10,5);<br>
+                           // store the address of Rectangle<br>
+                           shape = &rec;<br>
+                           // call rectangle area.<br>
+                           shape->area();<br>
+                           // store the address of Triangle<br>
+                           shape = &tri;<br>
+                           // call triangle area.<br>
+                           shape->area();<br>
+                           return 0;<br>
+                        }
+                </code>
             </section>
             <section class="main-section" id="Abstraction">
                 <header>
