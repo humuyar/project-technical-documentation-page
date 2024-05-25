@@ -460,6 +460,27 @@
                     can be implemented using Class
                     and access modifiers.
                 </p>
+                <code>
+                    #include <iostream><br>
+                        using namespace std;<br>
+                        class temp{<br>
+                             int a;<br>
+                          int b;<br>
+                          public:<br>
+                          int solve(int input){<br>
+                            a=input;<br>
+                            b=a/2;<br>
+                            return b;<br>
+                          }<br>
+                        };<br>
+                        int main() {<br>
+                          int n;<br>
+                          cin>>n;<br>
+                          temp half;<br>
+                          int ans=half.solve(n);<br>
+                          cout<<ans<<endl;<br>
+                        }
+                </code>
             </section>
         </main>
     </div>
