@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>technical documentation page</title>
 </head>
 <body>
     <div class="main-body">
         <nav id="navbar">
             <header>Documentation Menu</header>
-            <a href="#Intro" class="nav-link">
-                What is C++</a>
-            <a href="#Object" class="nav-link">
+            <a href="#What_is_C++?" class="nav-link">
+                What is C++?</a>
+            <a href="#Objects_and_Classes" class="nav-link">
                 Objects and Classes</a>
             <a href="#Inheritance" class="nav-link">
                 Inheritance</a>
@@ -24,7 +25,7 @@
         </nav>
         </nav>
         <main id="main-doc">
-            <section class="main-section" id="Intro">
+            <section class="main-section" id="What_is_C++?">
                 <header>
                     What is C++?
                 </header>
@@ -83,7 +84,7 @@
                     <li>Encapsulation</li>
                 </ul>
             </section>
-            <section class="main-section" id="Object">
+            <section class="main-section" id="Objects_and_Classes">
                 <header>
                     Objects and Classes
                 </header>
@@ -194,6 +195,54 @@
                     For example: Combining Hierarchical
                     inheritance and Multiple Inheritance.
                 </p>
+                <code>
+                    #include <iostream><br>
+                    using namespace std;<br>
+                        class Person {<br>
+                            int id;<br>
+                            char name[100];<br>
+                        public:<br>
+                            void set_p()<br>
+                            {<br>
+                                cout << "Enter the Id:";<Br>
+                                cin >> id;<Br>
+                                cout << "Enter the Name:";<Br>
+                                cin >> name;<Br>
+                            }<Br>
+                        
+                            void display_p()<Br>
+                            {<Br>
+                                cout << endl <<"Id: "<< id << "\nName: " << name <<endl;<Br>
+                            }<Br>
+                        };<Br>
+                        class Student : private Person {<Br>
+                            char course[50];<Br>
+                            int fee;<Br>
+                        
+                        public:<Br>
+                            void set_s()<Br>
+                            {<Br>
+                                set_p();<Br>
+                                cout << "Enter the Course Name:";<Br>
+                                cin >> course;<Br>
+                                cout << "Enter the Course Fee:";<Br>
+                                cin >> fee;<Br>
+                            }<Br>
+                        
+                            void display_s()<Br>
+                            {<Br>
+                                display_p();<Br>
+                                cout <<"Course: "<< course << "\nFee: " << fee << endl;<Br>
+                            }<Br>
+                        };<Br>
+                        int main()<Br>
+                        {<Br>
+                            Student s;<Br>
+                            s.set_s();<Br>
+                            s.display_s();<Br>
+                            return 0;<Br>
+                        }
+                </code>
             </section>
             <section class="main-section" id="Polymorphism">
                 <header>
